@@ -1,0 +1,23 @@
+@use '../generics/generics.scss' as *;
+
+.burger-menu {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  transition: 500ms;
+  position: fixed;
+  &__line {
+    height: 3px;
+    width: 100%;
+    min-width: 40px;
+    background-color: $primary;
+    transition: width 0.3s, gap 0.3s;
+
+    a {
+      display: none;
+      opacity: 0;
+    }
+  }
+}

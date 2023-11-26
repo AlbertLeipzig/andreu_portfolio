@@ -1,6 +1,8 @@
 @use './colors.scss' as *;
 @mixin states {
   transition: 500ms;
+  background-color: $white;
+  color: $primary;
   &:hover {
     background-color: $primary;
     color: $white;

@@ -1,5 +1,5 @@
 @use '../generics/generics.scss' as *;
-@mixin box($width: unset) {
+@mixin box($width: fit-content) {
   background-color: $white;
   padding: 0.3em 1.3em;
   border-radius: 4px;

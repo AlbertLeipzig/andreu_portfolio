@@ -1,0 +1,11 @@
+@use '../generics/generics.scss' as *;
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40vw;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 5vh 5vw;
+  overflow-x: hidden;
+}
