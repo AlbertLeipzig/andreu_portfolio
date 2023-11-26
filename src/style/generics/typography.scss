@@ -1,0 +1,70 @@
+@use './colors.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,800&family=Jim+Nightshade&display=swap');
+
+$primary-fontFace: 'EB Garamond';
+$secondary-fontFace: 'Jim Nightshade';
+
+@mixin mainTitle {
+  font-family: $secondary-fontFace;
+  font-size: 6rem;
+  color: $black;
+  line-height: 1.1em;
+}
+
+@mixin pageTitle {
+  font-family: $secondary-fontFace;
+  font-size: 4.5rem;
+  color: $black;
+  line-height: 1.1em;
+}
+
+@mixin sectionTitle {
+  font-family: $primary-fontFace;
+  font-size: 2.6rem;
+  color: $white;
+  line-height: 1.4em;
+}
+
+@mixin textBody {
+  font-family: $primary-fontFace;
+  font-size: 2rem;
+  color: $black;
+  line-height: 1.6em;
+}
+
+@mixin trackTitle {
+  font-family: $secondary-fontFace;
+  font-size: 2rem;
+  color: $black;
+}
+
+@mixin quote {
+  font-family: $primary-fontFace;
+  font-size: 2rem;
+  color: $black;
+}
+
+h1 {
+  @include pageTitle;
+}
+
+h2 {
+  @include sectionTitle;
+}
+
+p {
+  @include textBody;
+}
+
+button {
+  @include textBody;
+}
+
+a {
+  @include textBody;
+}
+
+blockquote {
+  @include quote;
+}

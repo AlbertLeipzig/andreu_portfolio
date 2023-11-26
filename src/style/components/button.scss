@@ -1,0 +1,4 @@
+@use '../generics/box.scss' as *;
+button {
+  @include box;
+}
