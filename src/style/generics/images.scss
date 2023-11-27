@@ -5,11 +5,16 @@ img {
   min-width: 300px;
   aspect-ratio: 16 / 9;
   background-color: $secondary;
+  object-fit: cover;
+  margin: 2vh auto;
+  display: block;
+  border-radius: 4px;
 }
 
 .icon {
   width: 40px;
   height: 40px;
-  color: green;
-  fill: blue;
+  min-width: unset;
+  background: none;
+  padding: 5px 5px 0 5px;
 }

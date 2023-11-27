@@ -1,4 +1,4 @@
-export const MediaPlayer = ({ onSelect, selectedTrack }) => {
+export const MediaPlayer = ({ selectedTrack }) => {
   return (
     <div>
       <video controls>
@@ -11,7 +11,6 @@ export const MediaPlayer = ({ onSelect, selectedTrack }) => {
           type="video/mp4"
         />
       </video>
-      
     </div>
   );
 };

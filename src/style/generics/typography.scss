@@ -1,4 +1,5 @@
 @use './colors.scss' as *;
+@use './states.scss' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,800&family=Jim+Nightshade&display=swap');
 
@@ -17,6 +18,8 @@ $secondary-fontFace: 'Jim Nightshade';
   font-size: 4.5rem;
   color: $black;
   line-height: 1.1em;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 @mixin sectionTitle {
@@ -31,6 +34,7 @@ $secondary-fontFace: 'Jim Nightshade';
   font-size: 2rem;
   color: $black;
   line-height: 1.6em;
+  margin: 0.25vh 0;
 }
 
 @mixin trackTitle {
@@ -63,6 +67,7 @@ button {
 
 a {
   @include textBody;
+  padding: 0.25em .5em;
 }
 
 blockquote {
@@ -92,6 +97,7 @@ blockquote {
     color: $primary;
     background: none;
     border-bottom: 1px solid $primary;
+    border-radius: 4px;
   }
 }
 

@@ -7,6 +7,7 @@
   color: $primary;
   display: grid;
   place-items: center;
+  margin: .75vh auto;
   @include states;
   width: $width;
 }

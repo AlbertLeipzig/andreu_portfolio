@@ -47,14 +47,14 @@ export const BlogPage = () => {
   const { title, content } = selectedBlogEntry;
   return (
     <div className="blog">
-      <h1>Hello Blog</h1>
-      {/* {content.map((item) => (
+      <h1>{title}</h1>
+      {content.map((item) => (
         <>
-          {item.type === 'img' && <img src={img.url} alt={`${title} image`} />}
+          {item.type === 'img' && <img src={item.url} alt={`${title} image`} />}
           {item.type === 'sectionTitle' && <h2>{item.content}</h2>}
           {item.type === 'body' && <p>{item.content}</p>}
         </>
-      ))} */}
+      ))}
     </div>
   );
 };

@@ -1,0 +1,26 @@
+@use '../generics/generics.scss' as *;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5vh;
+  padding: 2vh 5vw;
+  a {
+    transition: 200ms;
+    color: $white;
+    text-decoration: none;
+    margin: 0.25em;
+
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+    &:focus {
+      background-color: $primary;
+      color: $white;
+    }
+    &:active {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}
