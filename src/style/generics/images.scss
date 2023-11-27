@@ -1,7 +1,10 @@
+@use '../generics/colors.scss' as *;
+
 img {
   width: 50vw;
   min-width: 300px;
   aspect-ratio: 16 / 9;
+  background-color: $secondary;
 }
 
 .icon {

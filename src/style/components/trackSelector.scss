@@ -2,4 +2,7 @@
 
 .track-selector {
   @include box;
+  width: 200px;
+  justify-content: left;
+  padding-left: 5px;
 }
