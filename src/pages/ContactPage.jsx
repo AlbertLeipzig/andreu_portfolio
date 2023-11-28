@@ -1,8 +1,9 @@
+import { PageTitle } from '../components/PageTitle';
 import { SocialMediaBar } from '../components/SocialMediaBar';
 export const ContactPage = () => {
   return (
     <div className="contact">
-      <h1>Contacte</h1>
+      <PageTitle title="Contacte" />
       <form action="">
         <textarea placeholder="el teu missatge"></textarea>
         <input type="text" placeholder="El teu nom" />

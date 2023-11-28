@@ -4,7 +4,6 @@ import { BurgerMenu } from './BurgerMenu';
 export const Header = () => {
   const location = useLocation();
   const isHome = location.pathname === '/';
-  console.log(location);
   return (
     <header>
       {isHome ? <h2>Musician Name</h2> : <div></div>}

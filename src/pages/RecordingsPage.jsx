@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import trackList from '../data/trackList.json';
-
+import { PageTitle } from '../components/PageTitle';
 export const RecordingsPage = () => {
   const [selectedTrack, setSelectedTrack] = useState(trackList[0]);
 
@@ -10,8 +10,7 @@ export const RecordingsPage = () => {
 
   return (
     <>
-      <h1>Gravacions</h1>
-
+      <PageTitle title="Gravacions" />
       <div className="video"></div>
 
       <p>Selected Track: {selectedTrack.title}</p>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import blogEntries from '../data/blogEntries.json';
+import { PageTitle } from '../components/PageTitle';
 
 export const BlogPage = () => {
   const [selectedBlogEntry, setSelectedBlogEntry] = useState(
@@ -8,7 +9,7 @@ export const BlogPage = () => {
   const { title, content } = selectedBlogEntry;
   return (
     <div className="blog">
-      <h1>{title}</h1>
+      <PageTitle title={title} />
       {content.map((item, i) => (
         <>
           {item.type === 'img' && (
@@ -21,7 +22,7 @@ export const BlogPage = () => {
       <ul>
         {blogEntries.map((entry) => (
           <li key={entry.id} onClick={() => setSelectedBlogEntry(entry)}>
-            <button className='track-selector'>{entry.title}</button>
+            <button className="track-selector">{entry.title}</button>
           </li>
         ))}
       </ul>
