@@ -5,9 +5,13 @@ export const ContactPage = () => {
     <div className="contact">
       <PageTitle title="Contacte" />
       <form action="">
-        <textarea placeholder="el teu missatge"></textarea>
-        <input type="text" placeholder="El teu nom" />
-        <input type="email" placeholder="el teu correu electrònic" />
+        <textarea placeholder="el teu missatge" rows="0"></textarea>
+        <input type="text" placeholder="El teu nom" class="input--empty" />
+        <input
+          type="email"
+          placeholder="el teu correu electrònic"
+          class="input--empty"
+        />
         <button>Envia</button>
       </form>
       <SocialMediaBar />

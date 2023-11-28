@@ -97,8 +97,8 @@ blockquote {
   @include textBody;
   &--empty {
     @extend input;
-    color: $black-translucent;
-    background: none;
+    color: $white;
+    background: $black-translucent;
   }
   &--invalid {
     @extend input;
@@ -118,14 +118,22 @@ input {
   @include input;
 }
 
+.input {
+  @include input;
+}
+
 textarea {
   @include input;
   resize: none;
-  height: 3rem;
+  /*   height: 3rem; */
   scroll-margin: unset;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+.phantom-title {
+  opacity: 0;
 }

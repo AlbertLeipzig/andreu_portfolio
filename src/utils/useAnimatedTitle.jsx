@@ -5,7 +5,7 @@ export const useAnimatedTitle = (originalTitle) => {
 
   useEffect(() => {
     let index = 0;
-    const time = 1200 / originalTitle.length;
+    const time = 600 / originalTitle.length;
 
     const intervalId = setInterval(() => {
       const partialTitle = originalTitle.slice(0, index + 1);
@@ -24,4 +24,3 @@ export const useAnimatedTitle = (originalTitle) => {
 
   return displayTitle;
 };
-
