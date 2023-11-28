@@ -1,27 +1,5 @@
 import { useState } from 'react';
-import { MediaPlayer } from '../components/MediaPlayer';
-import { TrackSelector } from "../components/TrackSelector";
-
-const trackList = [
-  {
-    id: 0,
-    title: 'First Piece',
-    link: 'https://audio-link-for-first-piece.com',
-    type: 'audio',
-  },
-  {
-    id: 1,
-    title: 'Second Piece',
-    link: 'https://audio-link-for-second-piece.com',
-    type: 'audio',
-  },
-  {
-    id: 2,
-    title: 'Third Piece',
-    link: 'https://video-link-for-third-piece.com',
-    type: 'video',
-  },
-];
+import trackList from '../data/trackList.json';
 
 export const RecordingsPage = () => {
   const [selectedTrack, setSelectedTrack] = useState(trackList[0]);
@@ -48,7 +26,13 @@ export const RecordingsPage = () => {
       <p>Selected Track: {selectedTrack.title}</p>
 
       {trackList.map((track) => (
-        <TrackSelector key={track.id} onSelect={handleTrackSelect} track={track} />
+        <button
+          key={track.id}
+          className="track-selector"
+          onClick={() => handleTrackSelect(track)}
+        >
+          {track.title}
+        </button>
       ))}
     </>
   );
