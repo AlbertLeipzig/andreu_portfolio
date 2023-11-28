@@ -21,6 +21,7 @@ $secondary-fontFace: 'Jim Nightshade';
   line-height: 1.1em;
   margin-bottom: 1em;
   text-align: center;
+  @include selection;
 }
 
 @mixin sectionTitle {
@@ -28,6 +29,7 @@ $secondary-fontFace: 'Jim Nightshade';
   font-size: 2.6rem;
   color: $white;
   line-height: 1.4em;
+  @include selection;
 }
 
 @mixin textBody {
@@ -37,6 +39,7 @@ $secondary-fontFace: 'Jim Nightshade';
   line-height: 1.6em;
   margin: 0.25vh 0;
   max-width: 75ch;
+  @include selection;
 }
 
 @mixin trackTitle {
@@ -49,6 +52,14 @@ $secondary-fontFace: 'Jim Nightshade';
   font-family: $primary-fontFace;
   font-size: 2rem;
   color: $black;
+  @include selection;
+}
+
+@mixin selection {
+  &::selection {
+    color: $secondary;
+    background-color: $white-translucent;
+  }
 }
 
 h1 {
