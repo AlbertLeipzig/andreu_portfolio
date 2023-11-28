@@ -10,18 +10,9 @@ export const RecordingsPage = () => {
 
   return (
     <>
-      <h1>Enregistraments</h1>
+      <h1>Gravacions</h1>
 
-      <video controls>
-        <source
-          src={
-            selectedTrack.type === 'video'
-              ? selectedTrack.link
-              : 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-          }
-          type="video/mp4"
-        />
-      </video>
+      <div className="video"></div>
 
       <p>Selected Track: {selectedTrack.title}</p>
 

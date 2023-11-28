@@ -1,21 +1,20 @@
+import { NavLink } from 'react-router-dom';
 export const BurgerMenu = () => {
   return (
     <div className="burger-menu">
       <div className="burger-menu__line" value="1">
-        <a href="">Home</a>
+        <NavLink to="/">Home</NavLink>
       </div>
       <div className="burger-menu__line" value="2">
-        <a href="">Gravacions</a>
+        <NavLink to="/recordings">Gravacions</NavLink>
       </div>
       <div className="burger-menu__line" value="3">
-        <a href="">Blog</a>
+        <NavLink to="/blog">Blog</NavLink>
       </div>
       <div className="burger-menu__line" value="4">
-        <a href="">Contacte</a>
+        <NavLink to="contact">Contacte</NavLink>
       </div>
-      <div className="burger-menu__line" value="5">
-        <a href=""></a>
-      </div>
+      <div className="burger-menu__line" value="4"></div>
     </div>
   );
 };
