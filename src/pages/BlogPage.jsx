@@ -43,7 +43,7 @@ const blogEntries = [
   },
 ];
 export const BlogPage = () => {
-  const [selectedBlogEntry, setSelectedBlogEntry] = useState(blogEntries[0]);
+  const [selectedBlogEntry, setSelectedBlogEntry] = useState(blogEntries.at(-1));
   const { title, content } = selectedBlogEntry;
   return (
     <div className="blog">
@@ -55,6 +55,8 @@ export const BlogPage = () => {
           {item.type === 'body' && <p>{item.content}</p>}
         </>
       ))}
+
     </div>
   );
 };
+º

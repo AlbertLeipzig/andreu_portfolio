@@ -1,12 +1,13 @@
 @use '../generics/colors.scss' as *;
 
 img {
-  width: 50vw;
+  width: 100%;
   min-width: 300px;
+  max-height: 200px;
   aspect-ratio: 16 / 9;
   background-color: $secondary;
   object-fit: cover;
-  margin: 2vh auto;
+  margin: 4vh auto;
   display: block;
   border-radius: 4px;
 }

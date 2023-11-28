@@ -1,0 +1,8 @@
+@use '../generics/generics.scss' as *;
+.blog {
+  width: fit-content;
+  h2 {
+    margin-top: 2vh;
+    margin-bottom: 0.5em;
+  }
+}

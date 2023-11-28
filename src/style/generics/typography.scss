@@ -17,6 +17,7 @@ $secondary-fontFace: 'Jim Nightshade';
   font-family: $secondary-fontFace;
   font-size: 4.5rem;
   color: $black;
+  color: $secondary;
   line-height: 1.1em;
   margin-bottom: 1em;
   text-align: center;
@@ -35,6 +36,7 @@ $secondary-fontFace: 'Jim Nightshade';
   color: $black;
   line-height: 1.6em;
   margin: 0.25vh 0;
+  max-width: 75ch;
 }
 
 @mixin trackTitle {
@@ -67,7 +69,7 @@ button {
 
 a {
   @include textBody;
-  padding: 0.25em .5em;
+  padding: 0.25em 0.5em;
 }
 
 blockquote {
