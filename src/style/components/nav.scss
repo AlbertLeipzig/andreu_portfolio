@@ -1,0 +1,9 @@
+nav {
+  display: none;
+  ul {
+    display: flex;
+  }
+  @media screen and (width > 768px) {
+    display: block;
+  }
+}

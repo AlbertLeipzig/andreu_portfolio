@@ -1,17 +1,39 @@
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import { BurgerMenu } from './BurgerMenu';
 export const Header = () => {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+  console.log(location);
   return (
     <header>
-      <h2>Musician Name</h2>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-          <Link to="/recordings">Enregistraments</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contacte</Link>
-        </li>
-      </ul>
+      {isHome ? <h2>Musician Name</h2> : <div></div>}
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/">
+              Home
+              <div className="navlink-underline"></div>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/recordings">
+              Enregistraments<div className="navlink-underline"></div>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/blog">
+              Blog<div className="navlink-underline"></div>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">
+              Contacte<div className="navlink-underline"></div>
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+      <BurgerMenu />
     </header>
   );
 };
